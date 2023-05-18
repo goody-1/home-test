@@ -10,7 +10,10 @@ section#blogs, .row, .post-container {
     flex-direction: row;
     width: 100%;
 }
+
 .card-pad {
+    border-top: solid #A87CA0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
