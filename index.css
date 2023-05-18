@@ -1,0 +1,70 @@
+
+
+main {
+    display: flex;
+    margin-top: 5vh;
+}
+
+section#blogs, .row, .post-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.card-pad {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 6px;
+    width: 100%;
+}
+
+.heading {
+    font-size: medium;
+    font-weight: 400;
+    padding: 0px;
+    padding-left: 8px;
+}
+
+.card-image, .card-description {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.post-title {
+    font-weight: 400;
+    line-height: 2.4rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Number of lines to show */
+    -webkit-box-orient: vertical;
+}
+.post-author {
+    font-style: italic;
+}
+.line-divider {
+    height: 15px;
+    width: 100%;
+    border: none;
+    border-bottom: solid #777 1px;
+    border-bottom-style: dotted;
+    margin-bottom: 3vh;
+}
+
+.card-footer {
+    margin-top: auto;
+    padding: 5px 8px;
+}
+
+/* Styles for screens with a maximum width of 768px  */
+@media screen and (max-width: 768px) {
+    section#blogs, .row, .post-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .post-title {
+        margin-bottom: 0 !important;
+    }
+}
+
+
+
