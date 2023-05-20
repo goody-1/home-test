@@ -90,6 +90,7 @@ function createCardElement(card) {
     description.appendChild(desc_p);
     title.appendChild(title_link);
     title_link.textContent = card.title.rendered;
+    title_link.href = card.link;
 
     const textBy = document.createTextNode('By ');
     const textOn = document.createTextNode(' on ');
